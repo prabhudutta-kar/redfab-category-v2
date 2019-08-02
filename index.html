@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+   
+    <title>Redfab</title>
+</head>
+
+<body class="color">
+<!--    Navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+     <div class="container">
+      <a class="navbar-brand" href="#"><b>Redfab</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-home"></i> <b>Home</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><b><i class="fab fa-wpexplorer"></i> Explore</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-grip-horizontal"></i> <b>Collections</b></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-map-marked-alt"></i> <b>Destinations</b>  
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-blog"></i> <b>Blog</b></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder=" Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" style="margin-right: 5px;" type="submit"><i class="fas fa-search"></i> <b>Search</b></button>
+            <button class="btn btn-outline-success my-2 my-sm-0" style="background-color: transparent!important; color: tomato!important;" type="submit"><i class="fas fa-user"></i> <b>Login</b></button>
+        </form>
+      </div>
+     </div>
+    </nav>
+    
+<!--    <div class="container">-->
+    
+<!-------------Filter---------------->
+      
+       <div class="arrange col-lg-12">
+        <div class="accordion" id="accordionExample">
+          <div class="card" style="border: 0!important;background-color: transparent!important;">
+            <div class="card-header" id="headingOne" style="background-color: transparent!important;">
+<!--              <h2 class="mb-0">-->
+                <button class="btn btn-design" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-family: 'Poppins', sans-serif;letter-spacing: 2px;background-color: rgb(248,248,248)!important;border-color: transparent!important;color: tomato!important;text-align: left!important;">
+                  <b>THEMES</b>
+                </button>
+<!--              </h2>-->
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body" style="padding-top: 10px!important;padding-left: 40px!important;">
+                <label class="contain"><span class="filter-font"> Honeymoon</span> 
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="contain"><span class="filter-font"> Beach</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="contain"><span class="filter-font">Boutique</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="contain"><span class="filter-font"> Budget</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                
+                <label class="contain"><span class="filter-font"> Luxury</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                
+                <label class="contain"><span class="filter-font"> Family</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="border: 0!important;background-color: transparent!important;">
+            <div class="card-header" id="headingOne" style="background-color: transparent!important;">
+<!--              <h2 class="mb-0">-->
+                <button class="btn btn-design" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="font-family: 'Poppins', sans-serif;letter-spacing: 2px;background-color: rgb(248,248,248)!important;border-color: transparent!important;color: tomato!important;text-align: left!important;">
+                  <b>REGION</b>
+                </button>
+<!--              </h2>-->
+            </div>
+
+            <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body" style="padding-top: 10px!important;padding-left: 40px!important;">
+                <label class="contain"><span class="filter-font">Across Country</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="contain"><span class="filter-font">North India</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="contain"><span class="filter-font">South India</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="contain"><span class="filter-font">East India</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                
+                <label class="contain"><span class="filter-font">West India</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                
+                <label class="contain"><span class="filter-font">Central India</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="contain"><span class="filter-font">North-East </span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="contain"><span class="filter-font">International</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="border: 0!important;background-color: transparent!important;">
+            <div class="card-header" id="headingOne" style="background-color: transparent!important;">
+<!--              <h2 class="mb-0">-->
+                <button class="btn btn-design" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-family: 'Poppins', sans-serif;letter-spacing: 2px;background-color: rgb(248,248,248)!important;border-color: transparent!important;color: tomato!important;text-align: left!important;">
+                  <b>ACTIVITIES</b>
+                </button>
+<!--              </h2>-->
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body" style="padding-top: 10px!important;padding-left: 40px!important;">
+                <label class="contain"><span class="filter-font">Water Sports</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="contain"><span class="filter-font">Trekking</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="contain"><span class="filter-font">Snow Sport</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="contain"><span class="filter-font">Extreme Sports</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                
+                <label class="contain"><span class="filter-font">Adventures</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="border: 0!important;background-color: transparent!important;">
+            <div class="card-header" id="headingOne" style="background-color: transparent!important;">
+<!--              <h2 class="mb-0">-->
+                <button class="btn btn-design" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-family: 'Poppins', sans-serif;letter-spacing: 2px;background-color: rgb(248,248,248)!important;border-color: transparent!important;color: tomato!important;text-align: left!important;">
+                  <b>BEST TIME TO VISIT</b>
+                </button>
+<!--              </h2>-->
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body" style="padding-top: 10px!important;padding-left: 20px!important;">
+              
+               <div class="months">
+                <label class="contain"><span class="filter-font">January</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="contain"><span class="filter-font">February</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="contain"><span class="filter-font">March</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+               </div>
+
+              <div class="months">
+                <label class="contain"><span class="filter-font">April</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="contain"><span class="filter-font">May</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="contain"><span class="filter-font">June </span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+               </div>
+              
+               <div class="months">
+                <label class="contain"><span class="filter-font">July</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="contain"><span class="filter-font">August</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="contain"><span class="filter-font">September</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+               </div>
+                
+               <div class="months">
+                <label class="contain"><span class="filter-font">October</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="contain"><span class="filter-font">November</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="contain"><span class="filter-font">December</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+               </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card" style="border: 0!important;background-color: transparent!important;">
+            <div class="card-header" id="headingOne" style="background-color: transparent!important;">
+<!--              <h2 class="mb-0">-->
+                <button class="btn btn-design" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-family: 'Poppins', sans-serif;letter-spacing: 2px;background-color: rgb(248,248,248)!important;border-color: transparent!important;color: tomato!important;text-align: left!important;">
+                  <b>PLACES</b>
+                </button>
+<!--              </h2>-->
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body" style="padding-top: 10px!important;padding-left: 40px!important;">
+                <label class="contain"><span class="filter-font">Goa</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="contain"><span class="filter-font">Delhi</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="contain"><span class="filter-font">Manali</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="contain"><span class="filter-font">Shimla</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                
+                <label class="contain"><span class="filter-font">Kashmir</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="contain"><span class="filter-font">Chennai</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="contain"><span class="filter-font">Hyderabad</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="contain"><span class="filter-font">Mumbai</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="contain"><span class="filter-font">Pune</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                
+                <label class="contain"><span class="filter-font">Kerala</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="contain"><span class="filter-font">Andaman</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                
+                <label class="contain"><span class="filter-font">Karnataka</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="border: 0!important;background-color: transparent!important;">
+            <div class="card-header" id="headingOne" style="background-color: transparent!important;">
+<!--              <h2 class="mb-0">-->
+                <button class="btn btn-design" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-family: 'Poppins', sans-serif;letter-spacing: 2px;background-color: rgb(248,248,248)!important;border-color: transparent!important;color: tomato!important;text-align: left!important;">
+                  <b>DAYS</b>
+                </button>
+<!--              </h2>-->
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body" style="padding-top: 10px!important;padding-left: 40px!important;">
+                 <label class="contain"><span class="filter-font">0 - 2 Days</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="contain"><span class="filter-font">3 - 5 Days</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="contain"><span class="filter-font">6 - 9 Days</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                
+                <label class="contain"><span class="filter-font">More than 18</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+<!----------------Card------------->
+      
+        <div class="holidaycard">
+            <div class="card-deck">
+              <div class="card" style=" max-height: 400px!important;border-radius: 5px!important;">
+                <div class="image" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),url(./assets/img/taj.jpeg);border-top-left-radius: 5px!important;border-top-right-radius: 5px!important;">
+                   <div class="top-left">
+                       <i class="fas fa-map-marker-alt fa-2x" style="margin-top: 3px!important;"></i>
+                       <div style="float: right;margin-left: 2px;">
+                        <p style="margin-bottom: 0!important;letter-spacing: 2px;"><b>Agra</b></p>
+                        <p style="font-size: 11px;">Uttar Pradesh</p>
+                       </div>
+                   </div>
+                   <div class="top-right">
+                       <div class="gallery">
+                         <i class="far fa-image fa-lg"></i> 20 
+                       </div>
+                       <div class="video" style="float: right;">
+                           <i class="fab fa-youtube fa-lg"></i> 5
+                       </div>
+                   </div>
+                   <div class="bottom-left" style="position: absolute;bottom: 245px;left: 3px;padding-left: 2px;padding-right: 2px;">
+                       <p style="font-size: 12px;margin-bottom: 0!important;letter-spacing: 0px;">Reviews</p>
+                       <i class="fas fa-star"></i> <b>4.5/5</b>
+                   </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Places : <span style="font-size: 14px;"><a href="#">Taj Mahal</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Fatehpur Sikri</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Agra Fort</a> </span><span class="text-muted">|</span>
+                  <span id="dots"></span><span id="more">
+                  <span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span></span>
+                  <button onclick="myFunction()" id="myBtn" style="padding-left: 0px!important;color: cornflowerblue!important;"><b>+5 more</b></button></h6>
+                  
+                  
+                  <div class="packages">
+                     <div class="pack">
+                        <i class="fas fa-archive fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Package</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fas fa-hotel fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Hotels</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fab fa-telegram-plane " style="margin-left: 38%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Flight</span>
+                        </div>
+                     </div>
+                      <div class="pack" style="border-right: 0!important;">
+                        <i class="fas fa-utensils" style="margin-left: 40%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Food</span>
+                        </div>
+                     </div> 
+                  </div>
+                  
+                    <h6 class="card-title" style="color: tomato!important; margin-top: 25px;font-size: 13px;font-family:'Open sans', sans-serif">ACTIVITIES : <span style="font-size: 12px;color: dimgray">Water sports, Trekking, Snow Sport </span></h6>
+                  
+                  <p class="card-text" style="font-size: 12px;margin-bottom: 5px!important;margin-top: 7px;">This is a longer card with supporting text below as a natural lead-in to additional content. This content... <span class="readmore" style="font-family: 'Poppins', sans-serif!important;font-size: 13px;"><a href="" style="text-decoration: none;color: tomato!important;">Read More</a></span></p>
+                  
+                 <div class="buttonparallel" >
+                      <div class="btn-1">
+                          <a href="#" class="btn btn-primary">Read More</a>
+                      </div>
+                      <div class="btn-2">
+                          <a href="#" class="btn btn-primary">18 Agra Attractions</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              
+<!------------Card-2------------>
+                    
+              <div class="card" style=" max-height: 400px!important;border-radius: 5px!important;">
+                <div class="image" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),url(./assets/img/taj.jpeg);border-top-left-radius: 5px!important;border-top-right-radius: 5px!important;">
+                   <div class="top-left">
+                       <i class="fas fa-map-marker-alt fa-2x" style="margin-top: 3px!important;"></i>
+                       <div style="float: right;margin-left: 2px;">
+                        <p style="margin-bottom: 0!important;letter-spacing: 2px;"><b>Agra</b></p>
+                        <p style="font-size: 11px;">Uttar Pradesh</p>
+                       </div>
+                   </div>
+                   <div class="top-right">
+                       <div class="gallery">
+                         <i class="far fa-image fa-lg"></i> 20 
+                       </div>
+                       <div class="video" style="float: right;">
+                           <i class="fab fa-youtube fa-lg"></i> 5
+                       </div>
+                   </div>
+                   <div class="bottom-left" style="position: absolute;bottom: 245px;left: 3px;padding-left: 2px;padding-right: 2px;">
+                       <p style="font-size: 12px;margin-bottom: 0!important;letter-spacing: 0px;">Reviews</p>
+                       <i class="fas fa-star"></i> <b>4.5/5</b>
+                   </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Places : <span style="font-size: 14px;"><a href="#">Taj Mahal</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Fatehpur Sikri</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Agra Fort</a> </span><span class="text-muted">|</span>
+                  <span id="dots"></span><span id="more">
+                  <span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span></span>
+                  <button onclick="myFunction()" id="myBtn1" style="padding-left: 0px!important;color: cornflowerblue!important;"><b>+5 more</b></button></h6>
+                  
+                  
+                  <div class="packages">
+                     <div class="pack">
+                        <i class="fas fa-archive fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Package</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fas fa-hotel fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Hotels</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fab fa-telegram-plane " style="margin-left: 38%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Flight</span>
+                        </div>
+                     </div>
+                      <div class="pack" style="border-right: 0!important;">
+                        <i class="fas fa-utensils" style="margin-left: 40%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Food</span>
+                        </div>
+                     </div> 
+                  </div>
+                  
+                    <h6 class="card-title" style="color: tomato!important; margin-top: 25px;font-size: 13px;font-family:'Open sans', sans-serif">ACTIVITIES : <span style="font-size: 12px;color: dimgray">Water sports, Trekking, Snow Sport </span></h6>
+                  
+                  <p class="card-text" style="font-size: 12px;margin-bottom: 5px!important;margin-top: 7px;">This is a longer card with supporting text below as a natural lead-in to additional content. This content... <span class="readmore" style="font-family: 'Poppins', sans-serif!important;font-size: 13px;"><a href="" style="text-decoration: none;color: tomato!important;">Read More</a></span></p>
+                  
+                 <div class="buttonparallel" >
+                      <div class="btn-1">
+                          <a href="#" class="btn btn-primary">Read More</a>
+                      </div>
+                      <div class="btn-2">
+                          <a href="#" class="btn btn-primary">18 Agra Attractions</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              
+<!------------Card-3------------>
+            
+             <div class="card" style=" max-height: 400px!important;border-radius: 5px!important;">
+                <div class="image" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),url(./assets/img/taj.jpeg);border-top-left-radius: 5px!important;border-top-right-radius: 5px!important;">
+                   <div class="top-left">
+                       <i class="fas fa-map-marker-alt fa-2x" style="margin-top: 3px!important;"></i>
+                       <div style="float: right;margin-left: 2px;">
+                        <p style="margin-bottom: 0!important;letter-spacing: 2px;"><b>Agra</b></p>
+                        <p style="font-size: 11px;">Uttar Pradesh</p>
+                       </div>
+                   </div>
+                   <div class="top-right">
+                       <div class="gallery">
+                         <i class="far fa-image fa-lg"></i> 20 
+                       </div>
+                       <div class="video" style="float: right;">
+                           <i class="fab fa-youtube fa-lg"></i> 5
+                       </div>
+                   </div>
+                   <div class="bottom-left" style="position: absolute;bottom: 245px;left: 3px;padding-left: 2px;padding-right: 2px;">
+                       <p style="font-size: 12px;margin-bottom: 0!important;letter-spacing: 0px;">Reviews</p>
+                       <i class="fas fa-star"></i> <b>4.5/5</b>
+                   </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Places : <span style="font-size: 14px;"><a href="#">Taj Mahal</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Fatehpur Sikri</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Agra Fort</a> </span><span class="text-muted">|</span>
+                  <span id="dots"></span><span id="more">
+                  <span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span></span>
+                  <button onclick="myFunction()" id="myBtn" style="padding-left: 0px!important;color: cornflowerblue!important;"><b>+5 more</b></button></h6>
+                  
+                  
+                  <div class="packages">
+                     <div class="pack">
+                        <i class="fas fa-archive fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Package</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fas fa-hotel fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Hotels</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fab fa-telegram-plane " style="margin-left: 38%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Flight</span>
+                        </div>
+                     </div>
+                      <div class="pack" style="border-right: 0!important;">
+                        <i class="fas fa-utensils" style="margin-left: 40%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Food</span>
+                        </div>
+                     </div> 
+                  </div>
+                  
+                    <h6 class="card-title" style="color: tomato!important; margin-top: 25px;font-size: 13px;font-family:'Open sans', sans-serif">ACTIVITIES : <span style="font-size: 12px;color: dimgray">Water sports, Trekking, Snow Sport </span></h6>
+                  
+                  <p class="card-text" style="font-size: 12px;margin-bottom: 5px!important;margin-top: 7px;">This is a longer card with supporting text below as a natural lead-in to additional content. This content... <span class="readmore" style="font-family: 'Poppins', sans-serif!important;font-size: 13px;"><a href="" style="text-decoration: none;color: tomato!important;">Read More</a></span></p>
+                  
+                 <div class="buttonparallel" >
+                      <div class="btn-1">
+                          <a href="#" class="btn btn-primary">Read More</a>
+                      </div>
+                      <div class="btn-2">
+                          <a href="#" class="btn btn-primary">18 Agra Attractions</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+<!------Card - 2nd row----->
+            <div class="card-deck">
+              <div class="card" style=" max-height: 400px!important;border-radius: 5px!important;">
+                <div class="image" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),url(./assets/img/taj.jpeg);border-top-left-radius: 5px!important;border-top-right-radius: 5px!important;">
+                   <div class="top-left">
+                       <i class="fas fa-map-marker-alt fa-2x" style="margin-top: 3px!important;"></i>
+                       <div style="float: right;margin-left: 2px;">
+                        <p style="margin-bottom: 0!important;letter-spacing: 2px;"><b>Agra</b></p>
+                        <p style="font-size: 11px;">Uttar Pradesh</p>
+                       </div>
+                   </div>
+                   <div class="top-right">
+                       <div class="gallery">
+                         <i class="far fa-image fa-lg"></i> 20 
+                       </div>
+                       <div class="video" style="float: right;">
+                           <i class="fab fa-youtube fa-lg"></i> 5
+                       </div>
+                   </div>
+                   <div class="bottom-left" style="position: absolute;bottom: 245px;left: 3px;padding-left: 2px;padding-right: 2px;">
+                       <p style="font-size: 12px;margin-bottom: 0!important;letter-spacing: 0px;">Reviews</p>
+                       <i class="fas fa-star"></i> <b>4.5/5</b>
+                   </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Places : <span style="font-size: 14px;"><a href="#">Taj Mahal</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Fatehpur Sikri</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Agra Fort</a> </span><span class="text-muted">|</span>
+                  <span id="dots"></span><span id="more">
+                  <span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span></span>
+                  <button onclick="myFunction()" id="myBtn" style="padding-left: 0px!important;color: cornflowerblue!important;"><b>+5 more</b></button></h6>
+                  
+                  
+                  <div class="packages">
+                     <div class="pack">
+                        <i class="fas fa-archive fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Package</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fas fa-hotel fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Hotels</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fab fa-telegram-plane " style="margin-left: 38%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Flight</span>
+                        </div>
+                     </div>
+                      <div class="pack" style="border-right: 0!important;">
+                        <i class="fas fa-utensils" style="margin-left: 40%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Food</span>
+                        </div>
+                     </div> 
+                  </div>
+                  
+                    <h6 class="card-title" style="color: tomato!important; margin-top: 25px;font-size: 13px;font-family:'Open sans', sans-serif">ACTIVITIES : <span style="font-size: 12px;color: dimgray">Water sports, Trekking, Snow Sport </span></h6>
+                  
+                  <p class="card-text" style="font-size: 12px;margin-bottom: 5px!important;margin-top: 7px;">This is a longer card with supporting text below as a natural lead-in to additional content. This content... <span class="readmore" style="font-family: 'Poppins', sans-serif!important;font-size: 13px;"><a href="" style="text-decoration: none;color: tomato!important;">Read More</a></span></p>
+                  
+                 <div class="buttonparallel" >
+                      <div class="btn-1">
+                          <a href="#" class="btn btn-primary">Read More</a>
+                      </div>
+                      <div class="btn-2">
+                          <a href="#" class="btn btn-primary">18 Agra Attractions</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              
+<!------------Card-2------------>
+                    
+              <div class="card" style=" max-height: 400px!important;border-radius: 5px!important;">
+                <div class="image" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),url(./assets/img/taj.jpeg);border-top-left-radius: 5px!important;border-top-right-radius: 5px!important;">
+                   <div class="top-left">
+                       <i class="fas fa-map-marker-alt fa-2x" style="margin-top: 3px!important;"></i>
+                       <div style="float: right;margin-left: 2px;">
+                        <p style="margin-bottom: 0!important;letter-spacing: 2px;"><b>Agra</b></p>
+                        <p style="font-size: 11px;">Uttar Pradesh</p>
+                       </div>
+                   </div>
+                   <div class="top-right">
+                       <div class="gallery">
+                         <i class="far fa-image fa-lg"></i> 20 
+                       </div>
+                       <div class="video" style="float: right;">
+                           <i class="fab fa-youtube fa-lg"></i> 5
+                       </div>
+                   </div>
+                   <div class="bottom-left" style="position: absolute;bottom: 245px;left: 3px;padding-left: 2px;padding-right: 2px;">
+                       <p style="font-size: 12px;margin-bottom: 0!important;letter-spacing: 0px;">Reviews</p>
+                       <i class="fas fa-star"></i> <b>4.5/5</b>
+                   </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Places : <span style="font-size: 14px;"><a href="#">Taj Mahal</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Fatehpur Sikri</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Agra Fort</a> </span><span class="text-muted">|</span>
+                  <span id="dots"></span><span id="more">
+                  <span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span></span>
+                  <button onclick="myFunction()" id="myBtn" style="padding-left: 0px!important;color: cornflowerblue!important;"><b>+5 more</b></button></h6>
+                  
+                  
+                  <div class="packages">
+                     <div class="pack">
+                        <i class="fas fa-archive fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Package</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fas fa-hotel fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Hotels</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fab fa-telegram-plane " style="margin-left: 38%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Flight</span>
+                        </div>
+                     </div>
+                      <div class="pack" style="border-right: 0!important;">
+                        <i class="fas fa-utensils" style="margin-left: 40%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Food</span>
+                        </div>
+                     </div> 
+                  </div>
+                  
+                    <h6 class="card-title" style="color: tomato!important; margin-top: 25px;font-size: 13px;font-family:'Open sans', sans-serif">ACTIVITIES : <span style="font-size: 12px;color: dimgray">Water sports, Trekking, Snow Sport </span></h6>
+                  
+                  <p class="card-text" style="font-size: 12px;margin-bottom: 5px!important;margin-top: 7px;">This is a longer card with supporting text below as a natural lead-in to additional content. This content... <span class="readmore" style="font-family: 'Poppins', sans-serif!important;font-size: 13px;"><a href="" style="text-decoration: none;color: tomato!important;">Read More</a></span></p>
+                  
+                 <div class="buttonparallel" >
+                      <div class="btn-1">
+                          <a href="#" class="btn btn-primary">Read More</a>
+                      </div>
+                      <div class="btn-2">
+                          <a href="#" class="btn btn-primary">18 Agra Attractions</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              
+<!------------Card-3------------>
+            
+             <div class="card" style=" max-height: 400px!important;border-radius: 5px!important;">
+                <div class="image" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),url(./assets/img/taj.jpeg);border-top-left-radius: 5px!important;border-top-right-radius: 5px!important;">
+                   <div class="top-left">
+                       <i class="fas fa-map-marker-alt fa-2x" style="margin-top: 3px!important;"></i>
+                       <div style="float: right;margin-left: 2px;">
+                        <p style="margin-bottom: 0!important;letter-spacing: 2px;"><b>Agra</b></p>
+                        <p style="font-size: 11px;">Uttar Pradesh</p>
+                       </div>
+                   </div>
+                   <div class="top-right">
+                       <div class="gallery">
+                         <i class="far fa-image fa-lg"></i> 20 
+                       </div>
+                       <div class="video" style="float: right;">
+                           <i class="fab fa-youtube fa-lg"></i> 5
+                       </div>
+                   </div>
+                   <div class="bottom-left" style="position: absolute;bottom: 245px;left: 3px;padding-left: 2px;padding-right: 2px;">
+                       <p style="font-size: 12px;margin-bottom: 0!important;letter-spacing: 0px;">Reviews</p>
+                       <i class="fas fa-star"></i> <b>4.5/5</b>
+                   </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Places : <span style="font-size: 14px;"><a href="#">Taj Mahal</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Fatehpur Sikri</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Agra Fort</a> </span><span class="text-muted">|</span>
+                  <span id="dots"></span><span id="more">
+                  <span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span></span>
+                  <button onclick="myFunction()" id="myBtn" style="padding-left: 0px!important;color: cornflowerblue!important;"><b>+5 more</b></button></h6>
+                  
+                  
+                  <div class="packages">
+                     <div class="pack">
+                        <i class="fas fa-archive fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Package</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fas fa-hotel fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Hotels</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fab fa-telegram-plane " style="margin-left: 38%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Flight</span>
+                        </div>
+                     </div>
+                      <div class="pack" style="border-right: 0!important;">
+                        <i class="fas fa-utensils" style="margin-left: 40%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Food</span>
+                        </div>
+                     </div> 
+                  </div>
+                  
+                    <h6 class="card-title" style="color: tomato!important; margin-top: 25px;font-size: 13px;font-family:'Open sans', sans-serif">ACTIVITIES : <span style="font-size: 12px;color: dimgray">Water sports, Trekking, Snow Sport </span></h6>
+                  
+                  <p class="card-text" style="font-size: 12px;margin-bottom: 5px!important;margin-top: 7px;">This is a longer card with supporting text below as a natural lead-in to additional content. This content... <span class="readmore" style="font-family: 'Poppins', sans-serif!important;font-size: 13px;"><a href="" style="text-decoration: none;color: tomato!important;">Read More</a></span></p>
+                  
+                 <div class="buttonparallel" >
+                      <div class="btn-1">
+                          <a href="#" class="btn btn-primary">Read More</a>
+                      </div>
+                      <div class="btn-2">
+                          <a href="#" class="btn btn-primary">18 Agra Attractions</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+<!---------card-3rd row------>
+           <div class="card-deck">
+              <div class="card" style=" max-height: 400px!important;border-radius: 5px!important;">
+                <div class="image" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),url(./assets/img/taj.jpeg);border-top-left-radius: 5px!important;border-top-right-radius: 5px!important;">
+                   <div class="top-left">
+                       <i class="fas fa-map-marker-alt fa-2x" style="margin-top: 3px!important;"></i>
+                       <div style="float: right;margin-left: 2px;">
+                        <p style="margin-bottom: 0!important;letter-spacing: 2px;"><b>Agra</b></p>
+                        <p style="font-size: 11px;">Uttar Pradesh</p>
+                       </div>
+                   </div>
+                   <div class="top-right">
+                       <div class="gallery">
+                         <i class="far fa-image fa-lg"></i> 20 
+                       </div>
+                       <div class="video" style="float: right;">
+                           <i class="fab fa-youtube fa-lg"></i> 5
+                       </div>
+                   </div>
+                   <div class="bottom-left" style="position: absolute;bottom: 245px;left: 3px;padding-left: 2px;padding-right: 2px;">
+                       <p style="font-size: 12px;margin-bottom: 0!important;letter-spacing: 0px;">Reviews</p>
+                       <i class="fas fa-star"></i> <b>4.5/5</b>
+                   </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Places : <span style="font-size: 14px;"><a href="#">Taj Mahal</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Fatehpur Sikri</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Agra Fort</a> </span><span class="text-muted">|</span>
+                  <span id="dots"></span><span id="more">
+                  <span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span></span>
+                  <button onclick="myFunction()" id="myBtn" style="padding-left: 0px!important;color: cornflowerblue!important;"><b>+5 more</b></button></h6>
+                  
+                  
+                  <div class="packages">
+                     <div class="pack">
+                        <i class="fas fa-archive fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Package</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fas fa-hotel fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Hotels</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fab fa-telegram-plane " style="margin-left: 38%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Flight</span>
+                        </div>
+                     </div>
+                      <div class="pack" style="border-right: 0!important;">
+                        <i class="fas fa-utensils" style="margin-left: 40%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Food</span>
+                        </div>
+                     </div> 
+                  </div>
+                  
+                    <h6 class="card-title" style="color: tomato!important; margin-top: 25px;font-size: 13px;font-family:'Open sans', sans-serif">ACTIVITIES : <span style="font-size: 12px;color: dimgray">Water sports, Trekking, Snow Sport </span></h6>
+                  
+                  <p class="card-text" style="font-size: 12px;margin-bottom: 5px!important;margin-top: 7px;">This is a longer card with supporting text below as a natural lead-in to additional content. This content... <span class="readmore" style="font-family: 'Poppins', sans-serif!important;font-size: 13px;"><a href="" style="text-decoration: none;color: tomato!important;">Read More</a></span></p>
+                  
+                 <div class="buttonparallel" >
+                      <div class="btn-1">
+                          <a href="#" class="btn btn-primary">Read More</a>
+                      </div>
+                      <div class="btn-2">
+                          <a href="#" class="btn btn-primary">18 Agra Attractions</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              
+<!------------Card-2------------>
+                    
+              <div class="card" style=" max-height: 400px!important;border-radius: 5px!important;">
+                <div class="image" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),url(./assets/img/taj.jpeg);border-top-left-radius: 5px!important;border-top-right-radius: 5px!important;">
+                   <div class="top-left">
+                       <i class="fas fa-map-marker-alt fa-2x" style="margin-top: 3px!important;"></i>
+                       <div style="float: right;margin-left: 2px;">
+                        <p style="margin-bottom: 0!important;letter-spacing: 2px;"><b>Agra</b></p>
+                        <p style="font-size: 11px;">Uttar Pradesh</p>
+                       </div>
+                   </div>
+                   <div class="top-right">
+                       <div class="gallery">
+                         <i class="far fa-image fa-lg"></i> 20 
+                       </div>
+                       <div class="video" style="float: right;">
+                           <i class="fab fa-youtube fa-lg"></i> 5
+                       </div>
+                   </div>
+                   <div class="bottom-left" style="position: absolute;bottom: 245px;left: 3px;padding-left: 2px;padding-right: 2px;">
+                       <p style="font-size: 12px;margin-bottom: 0!important;letter-spacing: 0px;">Reviews</p>
+                       <i class="fas fa-star"></i> <b>4.5/5</b>
+                   </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Places : <span style="font-size: 14px;"><a href="#">Taj Mahal</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Fatehpur Sikri</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Agra Fort</a> </span><span class="text-muted">|</span>
+                  <span id="dots"></span><span id="more">
+                  <span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span></span>
+                  <button onclick="myFunction()" id="myBtn" style="padding-left: 0px!important;color: cornflowerblue!important;"><b>+5 more</b></button></h6>
+                  
+                  
+                  <div class="packages">
+                     <div class="pack">
+                        <i class="fas fa-archive fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Package</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fas fa-hotel fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Hotels</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fab fa-telegram-plane " style="margin-left: 38%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Flight</span>
+                        </div>
+                     </div>
+                      <div class="pack" style="border-right: 0!important;">
+                        <i class="fas fa-utensils" style="margin-left: 40%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Food</span>
+                        </div>
+                     </div> 
+                  </div>
+                  
+                    <h6 class="card-title" style="color: tomato!important; margin-top: 25px;font-size: 13px;font-family:'Open sans', sans-serif">ACTIVITIES : <span style="font-size: 12px;color: dimgray">Water sports, Trekking, Snow Sport </span></h6>
+                  
+                  <p class="card-text" style="font-size: 12px;margin-bottom: 5px!important;margin-top: 7px;">This is a longer card with supporting text below as a natural lead-in to additional content. This content... <span class="readmore" style="font-family: 'Poppins', sans-serif!important;font-size: 13px;"><a href="" style="text-decoration: none;color: tomato!important;">Read More</a></span></p>
+                  
+                 <div class="buttonparallel" >
+                      <div class="btn-1">
+                          <a href="#" class="btn btn-primary">Read More</a>
+                      </div>
+                      <div class="btn-2">
+                          <a href="#" class="btn btn-primary">18 Agra Attractions</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              
+<!------------Card-3------------>
+            
+             <div class="card" style=" max-height: 400px!important;border-radius: 5px!important;">
+                <div class="image" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),url(./assets/img/taj.jpeg);border-top-left-radius: 5px!important;border-top-right-radius: 5px!important;">
+                   <div class="top-left">
+                       <i class="fas fa-map-marker-alt fa-2x" style="margin-top: 3px!important;"></i>
+                       <div style="float: right;margin-left: 2px;">
+                        <p style="margin-bottom: 0!important;letter-spacing: 2px;"><b>Agra</b></p>
+                        <p style="font-size: 11px;">Uttar Pradesh</p>
+                       </div>
+                   </div>
+                   <div class="top-right">
+                       <div class="gallery">
+                         <i class="far fa-image fa-lg"></i> 20 
+                       </div>
+                       <div class="video" style="float: right;">
+                           <i class="fab fa-youtube fa-lg"></i> 5
+                       </div>
+                   </div>
+                   <div class="bottom-left" style="position: absolute;bottom: 245px;left: 3px;padding-left: 2px;padding-right: 2px;">
+                       <p style="font-size: 12px;margin-bottom: 0!important;letter-spacing: 0px;">Reviews</p>
+                       <i class="fas fa-star"></i> <b>4.5/5</b>
+                   </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Places : <span style="font-size: 14px;"><a href="#">Taj Mahal</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Fatehpur Sikri</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Agra Fort</a> </span><span class="text-muted">|</span>
+                  <span id="dots"></span><span id="more">
+                  <span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span></span>
+                  <button onclick="myFunction()" id="myBtn" style="padding-left: 0px!important;color: cornflowerblue!important;"><b>+5 more</b></button></h6>
+                  
+                  
+                  <div class="packages">
+                     <div class="pack">
+                        <i class="fas fa-archive fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Package</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fas fa-hotel fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Hotels</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fab fa-telegram-plane " style="margin-left: 38%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Flight</span>
+                        </div>
+                     </div>
+                      <div class="pack" style="border-right: 0!important;">
+                        <i class="fas fa-utensils" style="margin-left: 40%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Food</span>
+                        </div>
+                     </div> 
+                  </div>
+                  
+                    <h6 class="card-title" style="color: tomato!important; margin-top: 25px;font-size: 13px;font-family:'Open sans', sans-serif">ACTIVITIES : <span style="font-size: 12px;color: dimgray">Water sports, Trekking, Snow Sport </span></h6>
+                  
+                  <p class="card-text" style="font-size: 12px;margin-bottom: 5px!important;margin-top: 7px;">This is a longer card with supporting text below as a natural lead-in to additional content. This content... <span class="readmore" style="font-family: 'Poppins', sans-serif!important;font-size: 13px;"><a href="" style="text-decoration: none;color: tomato!important;">Read More</a></span></p>
+                  
+                 <div class="buttonparallel" >
+                      <div class="btn-1">
+                          <a href="#" class="btn btn-primary">Read More</a>
+                      </div>
+                      <div class="btn-2">
+                          <a href="#" class="btn btn-primary">18 Agra Attractions</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+<!--            card-4th row-->
+           <div class="card-deck">
+              <div class="card" style=" max-height: 400px!important;border-radius: 5px!important;">
+                <div class="image" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),url(./assets/img/taj.jpeg);border-top-left-radius: 5px!important;border-top-right-radius: 5px!important;">
+                   <div class="top-left">
+                       <i class="fas fa-map-marker-alt fa-2x" style="margin-top: 3px!important;"></i>
+                       <div style="float: right;margin-left: 2px;">
+                        <p style="margin-bottom: 0!important;letter-spacing: 2px;"><b>Agra</b></p>
+                        <p style="font-size: 11px;">Uttar Pradesh</p>
+                       </div>
+                   </div>
+                   <div class="top-right">
+                       <div class="gallery">
+                         <i class="far fa-image fa-lg"></i> 20 
+                       </div>
+                       <div class="video" style="float: right;">
+                           <i class="fab fa-youtube fa-lg"></i> 5
+                       </div>
+                   </div>
+                   <div class="bottom-left" style="position: absolute;bottom: 245px;left: 3px;padding-left: 2px;padding-right: 2px;">
+                       <p style="font-size: 12px;margin-bottom: 0!important;letter-spacing: 0px;">Reviews</p>
+                       <i class="fas fa-star"></i> <b>4.5/5</b>
+                   </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Places : <span style="font-size: 14px;"><a href="#">Taj Mahal</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Fatehpur Sikri</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Agra Fort</a> </span><span class="text-muted">|</span>
+                  <span id="dots"></span><span id="more">
+                  <span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span></span>
+                  <button onclick="myFunction()" id="myBtn" style="padding-left: 0px!important;color: cornflowerblue!important;"><b>+5 more</b></button></h6>
+                  
+                  
+                  <div class="packages">
+                     <div class="pack">
+                        <i class="fas fa-archive fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Package</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fas fa-hotel fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Hotels</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fab fa-telegram-plane " style="margin-left: 38%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Flight</span>
+                        </div>
+                     </div>
+                      <div class="pack" style="border-right: 0!important;">
+                        <i class="fas fa-utensils" style="margin-left: 40%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Food</span>
+                        </div>
+                     </div> 
+                  </div>
+                  
+                    <h6 class="card-title" style="color: tomato!important; margin-top: 25px;font-size: 13px;font-family:'Open sans', sans-serif">ACTIVITIES : <span style="font-size: 12px;color: dimgray">Water sports, Trekking, Snow Sport </span></h6>
+                  
+                  <p class="card-text" style="font-size: 12px;margin-bottom: 5px!important;margin-top: 7px;">This is a longer card with supporting text below as a natural lead-in to additional content. This content... <span class="readmore" style="font-family: 'Poppins', sans-serif!important;font-size: 13px;"><a href="" style="text-decoration: none;color: tomato!important;">Read More</a></span></p>
+                  
+                 <div class="buttonparallel" >
+                      <div class="btn-1">
+                          <a href="#" class="btn btn-primary">Read More</a>
+                      </div>
+                      <div class="btn-2">
+                          <a href="#" class="btn btn-primary">18 Agra Attractions</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              
+<!------------Card-2------------>
+                    
+              <div class="card" style=" max-height: 400px!important;border-radius: 5px!important;">
+                <div class="image" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),url(./assets/img/taj.jpeg);border-top-left-radius: 5px!important;border-top-right-radius: 5px!important;">
+                   <div class="top-left">
+                       <i class="fas fa-map-marker-alt fa-2x" style="margin-top: 3px!important;"></i>
+                       <div style="float: right;margin-left: 2px;">
+                        <p style="margin-bottom: 0!important;letter-spacing: 2px;"><b>Agra</b></p>
+                        <p style="font-size: 11px;">Uttar Pradesh</p>
+                       </div>
+                   </div>
+                   <div class="top-right">
+                       <div class="gallery">
+                         <i class="far fa-image fa-lg"></i> 20 
+                       </div>
+                       <div class="video" style="float: right;">
+                           <i class="fab fa-youtube fa-lg"></i> 5
+                       </div>
+                   </div>
+                   <div class="bottom-left" style="position: absolute;bottom: 245px;left: 3px;padding-left: 2px;padding-right: 2px;">
+                       <p style="font-size: 12px;margin-bottom: 0!important;letter-spacing: 0px;">Reviews</p>
+                       <i class="fas fa-star"></i> <b>4.5/5</b>
+                   </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Places : <span style="font-size: 14px;"><a href="#">Taj Mahal</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Fatehpur Sikri</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Agra Fort</a> </span><span class="text-muted">|</span>
+                  <span id="dots"></span><span id="more">
+                  <span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span></span>
+                  <button onclick="myFunction()" id="myBtn" style="padding-left: 0px!important;color: cornflowerblue!important;"><b>+5 more</b></button></h6>
+                  
+                  
+                  <div class="packages">
+                     <div class="pack">
+                        <i class="fas fa-archive fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Package</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fas fa-hotel fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Hotels</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fab fa-telegram-plane " style="margin-left: 38%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Flight</span>
+                        </div>
+                     </div>
+                      <div class="pack" style="border-right: 0!important;">
+                        <i class="fas fa-utensils" style="margin-left: 40%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Food</span>
+                        </div>
+                     </div> 
+                  </div>
+                  
+                    <h6 class="card-title" style="color: tomato!important; margin-top: 25px;font-size: 13px;font-family:'Open sans', sans-serif">ACTIVITIES : <span style="font-size: 12px;color: dimgray">Water sports, Trekking, Snow Sport </span></h6>
+                  
+                  <p class="card-text" style="font-size: 12px;margin-bottom: 5px!important;margin-top: 7px;">This is a longer card with supporting text below as a natural lead-in to additional content. This content... <span class="readmore" style="font-family: 'Poppins', sans-serif!important;font-size: 13px;"><a href="" style="text-decoration: none;color: tomato!important;">Read More</a></span></p>
+                  
+                 <div class="buttonparallel" >
+                      <div class="btn-1">
+                          <a href="#" class="btn btn-primary">Read More</a>
+                      </div>
+                      <div class="btn-2">
+                          <a href="#" class="btn btn-primary">18 Agra Attractions</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              
+<!------------Card-3------------>
+            
+             <div class="card" style=" max-height: 400px!important;border-radius: 5px!important;">
+                <div class="image" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),url(./assets/img/taj.jpeg);border-top-left-radius: 5px!important;border-top-right-radius: 5px!important;">
+                   <div class="top-left">
+                       <i class="fas fa-map-marker-alt fa-2x" style="margin-top: 3px!important;"></i>
+                       <div style="float: right;margin-left: 2px;">
+                        <p style="margin-bottom: 0!important;letter-spacing: 2px;"><b>Agra</b></p>
+                        <p style="font-size: 11px;">Uttar Pradesh</p>
+                       </div>
+                   </div>
+                   <div class="top-right">
+                       <div class="gallery">
+                         <i class="far fa-image fa-lg"></i> 20 
+                       </div>
+                       <div class="video" style="float: right;">
+                           <i class="fab fa-youtube fa-lg"></i> 5
+                       </div>
+                   </div>
+                   <div class="bottom-left" style="position: absolute;bottom: 245px;left: 3px;padding-left: 2px;padding-right: 2px;">
+                       <p style="font-size: 12px;margin-bottom: 0!important;letter-spacing: 0px;">Reviews</p>
+                       <i class="fas fa-star"></i> <b>4.5/5</b>
+                   </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Places : <span style="font-size: 14px;"><a href="#">Taj Mahal</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Fatehpur Sikri</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Agra Fort</a> </span><span class="text-muted">|</span>
+                  <span id="dots"></span><span id="more">
+                  <span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span></span>
+                  <button onclick="myFunction()" id="myBtn" style="padding-left: 0px!important;color: cornflowerblue!important;"><b>+5 more</b></button></h6>
+                  
+                  
+                  <div class="packages">
+                     <div class="pack">
+                        <i class="fas fa-archive fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Package</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fas fa-hotel fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Hotels</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fab fa-telegram-plane " style="margin-left: 38%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Flight</span>
+                        </div>
+                     </div>
+                      <div class="pack" style="border-right: 0!important;">
+                        <i class="fas fa-utensils" style="margin-left: 40%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Food</span>
+                        </div>
+                     </div> 
+                  </div>
+                  
+                    <h6 class="card-title" style="color: tomato!important; margin-top: 25px;font-size: 13px;font-family:'Open sans', sans-serif">ACTIVITIES : <span style="font-size: 12px;color: dimgray">Water sports, Trekking, Snow Sport </span></h6>
+                  
+                  <p class="card-text" style="font-size: 12px;margin-bottom: 5px!important;margin-top: 7px;">This is a longer card with supporting text below as a natural lead-in to additional content. This content... <span class="readmore" style="font-family: 'Poppins', sans-serif!important;font-size: 13px;"><a href="" style="text-decoration: none;color: tomato!important;">Read More</a></span></p>
+                  
+                 <div class="buttonparallel" >
+                      <div class="btn-1">
+                          <a href="#" class="btn btn-primary">Read More</a>
+                      </div>
+                      <div class="btn-2">
+                          <a href="#" class="btn btn-primary">18 Agra Attractions</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+<!--            card-5th row-->
+           <div class="card-deck">
+              <div class="card" style=" max-height: 400px!important;border-radius: 5px!important;">
+                <div class="image" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),url(./assets/img/taj.jpeg);border-top-left-radius: 5px!important;border-top-right-radius: 5px!important;">
+                   <div class="top-left">
+                       <i class="fas fa-map-marker-alt fa-2x" style="margin-top: 3px!important;"></i>
+                       <div style="float: right;margin-left: 2px;">
+                        <p style="margin-bottom: 0!important;letter-spacing: 2px;"><b>Agra</b></p>
+                        <p style="font-size: 11px;">Uttar Pradesh</p>
+                       </div>
+                   </div>
+                   <div class="top-right">
+                       <div class="gallery">
+                         <i class="far fa-image fa-lg"></i> 20 
+                       </div>
+                       <div class="video" style="float: right;">
+                           <i class="fab fa-youtube fa-lg"></i> 5
+                       </div>
+                   </div>
+                   <div class="bottom-left" style="position: absolute;bottom: 245px;left: 3px;padding-left: 2px;padding-right: 2px;">
+                       <p style="font-size: 12px;margin-bottom: 0!important;letter-spacing: 0px;">Reviews</p>
+                       <i class="fas fa-star"></i> <b>4.5/5</b>
+                   </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Places : <span style="font-size: 14px;"><a href="#">Taj Mahal</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Fatehpur Sikri</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Agra Fort</a> </span><span class="text-muted">|</span>
+                  <span id="dots"></span><span id="more">
+                  <span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span></span>
+                  <button onclick="myFunction()" id="myBtn" style="padding-left: 0px!important;color: cornflowerblue!important;"><b>+5 more</b></button></h6>
+                  
+                  
+                  <div class="packages">
+                     <div class="pack">
+                        <i class="fas fa-archive fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Package</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fas fa-hotel fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Hotels</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fab fa-telegram-plane " style="margin-left: 38%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Flight</span>
+                        </div>
+                     </div>
+                      <div class="pack" style="border-right: 0!important;">
+                        <i class="fas fa-utensils" style="margin-left: 40%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Food</span>
+                        </div>
+                     </div> 
+                  </div>
+                  
+                    <h6 class="card-title" style="color: tomato!important; margin-top: 25px;font-size: 13px;font-family:'Open sans', sans-serif">ACTIVITIES : <span style="font-size: 12px;color: dimgray">Water sports, Trekking, Snow Sport </span></h6>
+                  
+                  <p class="card-text" style="font-size: 12px;margin-bottom: 5px!important;margin-top: 7px;">This is a longer card with supporting text below as a natural lead-in to additional content. This content... <span class="readmore" style="font-family: 'Poppins', sans-serif!important;font-size: 13px;"><a href="" style="text-decoration: none;color: tomato!important;">Read More</a></span></p>
+                  
+                 <div class="buttonparallel" >
+                      <div class="btn-1">
+                          <a href="#" class="btn btn-primary">Read More</a>
+                      </div>
+                      <div class="btn-2">
+                          <a href="#" class="btn btn-primary">18 Agra Attractions</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              
+<!------------Card-2------------>
+                    
+              <div class="card" style=" max-height: 400px!important;border-radius: 5px!important;">
+                <div class="image" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),url(./assets/img/taj.jpeg);border-top-left-radius: 5px!important;border-top-right-radius: 5px!important;">
+                   <div class="top-left">
+                       <i class="fas fa-map-marker-alt fa-2x" style="margin-top: 3px!important;"></i>
+                       <div style="float: right;margin-left: 2px;">
+                        <p style="margin-bottom: 0!important;letter-spacing: 2px;"><b>Agra</b></p>
+                        <p style="font-size: 11px;">Uttar Pradesh</p>
+                       </div>
+                   </div>
+                   <div class="top-right">
+                       <div class="gallery">
+                         <i class="far fa-image fa-lg"></i> 20 
+                       </div>
+                       <div class="video" style="float: right;">
+                           <i class="fab fa-youtube fa-lg"></i> 5
+                       </div>
+                   </div>
+                   <div class="bottom-left" style="position: absolute;bottom: 245px;left: 3px;padding-left: 2px;padding-right: 2px;">
+                       <p style="font-size: 12px;margin-bottom: 0!important;letter-spacing: 0px;">Reviews</p>
+                       <i class="fas fa-star"></i> <b>4.5/5</b>
+                   </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Places : <span style="font-size: 14px;"><a href="#">Taj Mahal</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Fatehpur Sikri</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Agra Fort</a> </span><span class="text-muted">|</span>
+                  <span id="dots"></span><span id="more">
+                  <span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span></span>
+                  <button onclick="myFunction()" id="myBtn" style="padding-left: 0px!important;color: cornflowerblue!important;"><b>+5 more</b></button></h6>
+                  
+                  
+                  <div class="packages">
+                     <div class="pack">
+                        <i class="fas fa-archive fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Package</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fas fa-hotel fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Hotels</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fab fa-telegram-plane " style="margin-left: 38%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Flight</span>
+                        </div>
+                     </div>
+                      <div class="pack" style="border-right: 0!important;">
+                        <i class="fas fa-utensils" style="margin-left: 40%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Food</span>
+                        </div>
+                     </div> 
+                  </div>
+                  
+                    <h6 class="card-title" style="color: tomato!important; margin-top: 25px;font-size: 13px;font-family:'Open sans', sans-serif">ACTIVITIES : <span style="font-size: 12px;color: dimgray">Water sports, Trekking, Snow Sport </span></h6>
+                  
+                  <p class="card-text" style="font-size: 12px;margin-bottom: 5px!important;margin-top: 7px;">This is a longer card with supporting text below as a natural lead-in to additional content. This content... <span class="readmore" style="font-family: 'Poppins', sans-serif!important;font-size: 13px;"><a href="" style="text-decoration: none;color: tomato!important;">Read More</a></span></p>
+                  
+                 <div class="buttonparallel" >
+                      <div class="btn-1">
+                          <a href="#" class="btn btn-primary">Read More</a>
+                      </div>
+                      <div class="btn-2">
+                          <a href="#" class="btn btn-primary">18 Agra Attractions</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              
+<!------------Card-3------------>
+            
+             <div class="card" style=" max-height: 400px!important;border-radius: 5px!important;">
+                <div class="image" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)),url(./assets/img/taj.jpeg);border-top-left-radius: 5px!important;border-top-right-radius: 5px!important;">
+                   <div class="top-left">
+                       <i class="fas fa-map-marker-alt fa-2x" style="margin-top: 3px!important;"></i>
+                       <div style="float: right;margin-left: 2px;">
+                        <p style="margin-bottom: 0!important;letter-spacing: 2px;"><b>Agra</b></p>
+                        <p style="font-size: 11px;">Uttar Pradesh</p>
+                       </div>
+                   </div>
+                   <div class="top-right">
+                       <div class="gallery">
+                         <i class="far fa-image fa-lg"></i> 20 
+                       </div>
+                       <div class="video" style="float: right;">
+                           <i class="fab fa-youtube fa-lg"></i> 5
+                       </div>
+                   </div>
+                   <div class="bottom-left" style="position: absolute;bottom: 245px;left: 3px;padding-left: 2px;padding-right: 2px;">
+                       <p style="font-size: 12px;margin-bottom: 0!important;letter-spacing: 0px;">Reviews</p>
+                       <i class="fas fa-star"></i> <b>4.5/5</b>
+                   </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Places : <span style="font-size: 14px;"><a href="#">Taj Mahal</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Fatehpur Sikri</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Agra Fort</a> </span><span class="text-muted">|</span>
+                  <span id="dots"></span><span id="more">
+                  <span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span><span style="font-size: 14px;"><a href="#"> Demo</a> </span><span class="text-muted">|</span></span>
+                  <button onclick="myFunction()" id="myBtn" style="padding-left: 0px!important;color: cornflowerblue!important;"><b>+5 more</b></button></h6>
+                  
+                  
+                  <div class="packages">
+                     <div class="pack">
+                        <i class="fas fa-archive fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Package</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fas fa-hotel fa-sm" style="margin-left: 35%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Hotels</span>
+                        </div>
+                     </div>
+                     <div class="pack">
+                        <i class="fab fa-telegram-plane " style="margin-left: 38%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Flight</span>
+                        </div>
+                     </div>
+                      <div class="pack" style="border-right: 0!important;">
+                        <i class="fas fa-utensils" style="margin-left: 40%;color:tomato!important;"></i>
+                        <div style="transform: translateY(-30%);text-align: center">
+                        <span style="font-size: 12px;"> Food</span>
+                        </div>
+                     </div> 
+                  </div>
+                  
+                    <h6 class="card-title" style="color: tomato!important; margin-top: 25px;font-size: 13px;font-family:'Open sans', sans-serif">ACTIVITIES : <span style="font-size: 12px;color: dimgray">Water sports, Trekking, Snow Sport </span></h6>
+                  
+                  <p class="card-text" style="font-size: 12px;margin-bottom: 5px!important;margin-top: 7px;">This is a longer card with supporting text below as a natural lead-in to additional content. This content... <span class="readmore" style="font-family: 'Poppins', sans-serif!important;font-size: 13px;"><a href="" style="text-decoration: none;color: tomato!important;">Read More</a></span></p>
+                  
+                 <div class="buttonparallel" >
+                      <div class="btn-1">
+                          <a href="#" class="btn btn-primary">Read More</a>
+                      </div>
+                      <div class="btn-2">
+                          <a href="#" class="btn btn-primary">18 Agra Attractions</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+            
+        </div>
+        
+       </div>
+      </div>
+    
+    <script src="assets/js/filter.js"></script>
+    <script src="./assets/js/read.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
